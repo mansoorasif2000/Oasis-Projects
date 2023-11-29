@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Mansoor's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Services</a></li>
+            <!-- <li><a href="">Projects</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="first">
+        <div class="leftsec">
+          Hi, my name is <span class="mani">Mansoor</span> <br />
+          and i am a <br />
+          <span id="element"></span>
+
+          <div class="buttons">
+            <a href="static/Resume.pdf" download="">Download CV</a>
+            <!-- <input type="text" d> -->
+            <a href="https://github.com/mansoorasif2000">See Github</a>
+          </div>
+        </div>
+        <div class="rightsec">
+          <img src="static/pic.png" alt="" />
+        </div>
+      </section>
+      <hr />
+
+      <section class="second" id="about">
+        <span class="text-yellow">What I have done before</span>
+        <h1>Work Experience</h1>
+
+        <div class="box-1">
+          <div class="box">
+            <img src="static/Programmer (HD).png" alt="" />
+            <h3><span class="html">HTML</span></h3>
+            <label for="file"></label>
+              <progress id="file" value="90" max="100"> 32% </progress>
+            <!-- <p>
+              Have a 3 Years Experience in <br />
+              "Web Designing"
+            </p> -->
+          </div>
+
+          <div class="box">
+            <img src="static/Programmer (HD).png" alt="" />
+            <h3><span class="html">CSS</span></h3>
+            <label for="file"></label>
+              <progress id="file" value="80" max="100"> 32% </progress>
+            <!-- <p>
+              Have a 3 Years Experience in <br />
+              "Web Developer"
+            </p> -->
+          </div>
+        </div>
+
+        <div class="box-1">
+          <div class="box">
+            <img src="static/Programmer (HD).png" alt="" />
+            <h3><span class="html">Bootstrap</span></h3>
+            <label for="file"></label>
+              <progress id="file" value="55" max="100"> 32% </progress>
+            <!-- <p>
+              Have a 3 Years Experience in <br />
+              "Graphic Designing"
+            </p> -->
+          </div>
+
+          <div class="box">
+            <img src="static/Programmer (HD).png" alt="" />
+            <h3><span class="html">JavaScript</span></h3>
+            <label for="file"></label>
+              <progress id="file" value="20" max="100"> 32% </progress>
+            <!-- <p>
+              Have a 3 Years Experience in <br />
+              "Digital Marketer"
+            </p> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <section>
+      <div class="service">
+        <h1 class="appoi">For Appointment kindly fill the form </h1>
+        <form action="">
+          <input type="text" placeholder="Your Name">
+          <input type="text" placeholder="Your Email">
+          <input type="password" placeholder="password">
+
+
+        </form>
+        
+      </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer">
+            <div class="first-foot">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="second-foot">
+                <ul>
+                    <li><a href="">Whatsapp</a></li>
+                    <li><a href="https://www.linkedin.com/in/mansoor-asif-4501b227a/">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="third-foot">
+                <ul>
+                  <li><a href="">Emails</a></li>
+                    <li><a href=""> mansoorasif039@gmail.com</a></li>
+                    <!-- <li><a href=""> mansoor@yahoo.com</a></li> -->
+                    
+                </ul>
+            </div>
+            <div class="four-foot">
+                <ul>
+                    <li><a href="">EB Techs</a></li>
+                    <li><a href="">IT Park Peshawar</a></li>
+                    <li><a href="">0316-9973076</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="foot-rights">
+          Copyright &#169 mansoorsportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Web Designer", "Digital Marketer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
